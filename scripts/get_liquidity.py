@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 def fetch_exchange_rate_data(offset, pagesize):
-    url = f"https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/er-eeri-daily?offset={offset}&pagesize={pagesize}"
+    url = f"https://api.hkma.gov.hk/public/market-data-and-statistics/daily-monetary-statistics/daily-figures-interbank-liquidity?offset={offset}&pagesize={pagesize}"
     response = requests.get(url)
     response.raise_for_status()
     data = response.json()
@@ -26,9 +26,9 @@ def fetch_all_data():
         print(f"total fetched: {len(all_data)}")
     return all_data
 
-def save_to_csv(data, filename='hkd_usd_exchange_rates.csv'):
+def save_to_csv(data, filename='data/liquidity.csv'):
     df = pd.DataFrame(data)
-    df['date'] = pd.to_datetime(df['end_of_day'])
+    df['date'] = pd.to_datetime(df['end_of_date'])
     df = df.sort_values(by='date')
     df.to_csv(filename, index=False)
     print(f"Data saved to {filename}")
