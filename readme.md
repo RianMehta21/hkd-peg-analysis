@@ -43,7 +43,7 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
 ![Peg Stability Chart](images/1_peg_stability.png)
 
 ### 2. Interest Rate Spread Analysis
-*Illustrates the relationship between the US-HK interest rate spread and exchange rate movements ($r=0.53$). While the correlation is not visually noticeable, a positive spread (US rates exceeding HK rates) creates capital outflow pressure, pushing the spot rate toward the 7.85 weak-side limit, while negative spreads tend to strengthen the currency*
+*Illustrates the relationship between the US-HK interest rate spread and exchange rate movements r=0.53$. While the correlation is not visually noticeable, a positive spread (US rates exceeding HK rates) creates capital outflow pressure, pushing the spot rate toward the 7.85 weak-side limit, while negative spreads tend to strengthen the currency*
 ![Spread Correlation Chart](images/2_spread_correlation.png)
 
 ### 3. Aggregate Balance & Intervention Analysis
