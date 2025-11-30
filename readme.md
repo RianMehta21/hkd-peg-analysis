@@ -73,7 +73,7 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
 - **USD Change**: Daily percentage change in exchange rate
 - **Volatility**: 30-day rolling standard deviation of exchange rate changes
 
-###Data Sources:
+### Data Sources:
 * **HKMA Open API:** Daily Exchange Rates, HIBOR, Aggregate Balance.
 * **Federal Reserve (FRED):** Effective Federal Funds Rate.
 
@@ -91,7 +91,7 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/RianMehta21/hkd-peg-analysis.git](https://github.com/RianMehta21/hkd-peg-analysis.git)
+    git clone https://github.com/RianMehta21/hkd-peg-analysis.git
     cd hkd-peg-analysis
     ```
 
