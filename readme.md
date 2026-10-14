@@ -101,26 +101,29 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
     ```
 
 3.  **Run data collection scripts**
-    To fetch the latest raw data from the HKMA API:
+    From the repo root, fetch the latest raw data from the HKMA API:
     ```bash
-    python get_exchange_rates.py
-    python get_liquidity.py
+    python scripts/get_exchange_rates.py
+    python scripts/get_liquidity.py
     ```
 
 4.  **Run the analysis**
-    * **Data Prep:** Run `data_prep.ipynb` to process raw data into `data/master.csv`.
-    * **Analysis:** Run `analysis.ipynb` to generate charts and statistics.
+    * **Data Prep:** Run `notebooks/data_prep.ipynb` to process raw data into `data/master.csv`.
+    * **Analysis:** Run `notebooks/analysis.ipynb` to generate charts and statistics.
 ---
 
 ## 📂 Project Structure
 ```text
-HKD_Peg_Analysis/
+hkd-peg-analysis/
 │
-├── data/                   # Raw CSVs and processed master dataset
-├── images/                 # Saved visualization output
-├── data_prep.ipynb         # ETL and Data Cleaning pipeline
-├── analysis.ipynb          # Statistical analysis and plotting
-├── get_exchange_rates.py   # Utility script for HKMA API
-├── get_liquidity.py        # Utility script for HKMA API
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+├── data/                       # Raw CSVs and processed master dataset
+├── images/                     # Saved visualization output
+├── notebooks/
+│   ├── data_prep.ipynb         # ETL and Data Cleaning pipeline
+│   └── analysis.ipynb          # Statistical analysis and plotting
+├── scripts/
+│   ├── get_exchange_rates.py   # Utility script for HKMA API
+│   └── get_liquidity.py        # Utility script for HKMA API
+├── requirements.txt            # Python dependencies
+└── readme.md                   # Project documentation
+```
