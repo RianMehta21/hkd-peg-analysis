@@ -10,13 +10,13 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
 ## 🔎 Statistical Analysis & Key Findings
 
 ### 1. Peg Stability Metrics (2005-2025)
-* **Band Adherence:** The spot rate remained within the 7.75-7.85 band for **93.18%** of all trading days.
-* **Technical Breaches:** Recorded 203 days above 7.85 (3.98%) and 145 days below 7.75 (2.84%).
+* **Band Adherence:** The spot rate was strictly inside the 7.75-7.85 band for **91%** of all trading days, and the peg held throughout.
+* **Days at a Convertibility Limit:** Recorded 303 days at or above 7.85 (5.94%) and 145 days at or below 7.75 (2.84%), about 9% at or past a limit.
 * **Low Volatility:** Annualized volatility was **0.60%**, remarkably low compared to major floating currencies.
 * **Precision:** The average deviation was only **0.033 HKD** from the peg center (7.80).
 
 ### 2. Monetary Policy Linkage
-* **Policy Mirror:** A **0.94 correlation** between HIBOR and the Federal Funds Rate confirms that Hong Kong essentially imports US monetary policy.
+* **Policy Mirror:** A **0.94 correlation** between HIBOR and the Federal Funds Rate on levels is consistent with Hong Kong importing US monetary policy over long periods. On changes the correlation is only **-0.03** daily and **0.26** monthly, which means the two rates share the same long-run trend but HIBOR does not follow the Fed day to day and only catches up over months.
 * **Spread Influence:** The interest rate spread shows a moderate positive correlation (**0.53**) with exchange rate movements.
 * **Inverse Balance Relationship:** The Aggregate Balance is inversely correlated (**-0.71**) with Fed rates, confirming that the HKMA drains liquidity when US rates rise.
 
@@ -27,19 +27,18 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
     * **Largest Drain:** -$29.6 Billion HKD (July 7, 2025).
     * **Largest Injection:** +$116.7 Billion HKD (May 7, 2025).
 
-### 4. Crisis Resilience Stress Test
-* **2008 Financial Crisis:** Peg held perfectly (**0 Breaches**), Volatility 0.55%.
-* **2020 COVID Pandemic:** Peg held perfectly (**0 Breaches**), Volatility 0.85%.
-* **2019 HK Protests:** Recorded **16 Breach Days** with a +48% volatility spike.
-* **2022 Fed Rate Hikes:** Recorded **12 Breach Days** during aggressive tightening.
-* *Insight:* Political instability (2019) caused more technical band breaches than global financial crashes (2008/2020).
+### 4. Crisis Window Comparison
+* **2008 Financial Crisis:** Peg held perfectly (**0 days at a convertibility limit**), Volatility 0.55%.
+* **2020 COVID Pandemic:** Peg held perfectly (**0 days at a convertibility limit**), Volatility 0.85%.
+* **2019 HK Protests:** Recorded **31 days at a convertibility limit**, all before the June 9 anchor date, with a +48% volatility spike.
+* **2022 Fed Rate Hikes:** Recorded **20 days at a convertibility limit** during aggressive tightening.
 
 ---
 
 ## Key Visualizations
 
 ### 1. Historical Exchange Rate Band Adherence
-*Visualizes the spot rate relative to the 7.75-7.85 Convertibility Undertaking. While the rate stayed within bounds for 93% of the period, the chart highlights distinct periods of pressure where the rate approached the weak-side limit (7.85) for extended durations.*
+*Visualizes the spot rate relative to the 7.75-7.85 Convertibility Undertaking. While the rate was strictly inside the band for 91% of the period and at or past a convertibility limit on about 9%, the chart highlights distinct periods of pressure where the rate approached the weak-side limit (7.85) for extended durations.*
 ![Peg Stability Chart](images/1_peg_stability.png)
 
 ### 2. Interest Rate Spread Analysis
@@ -51,7 +50,7 @@ This project analyzes the HKD/USD peg from **May 2005 to Present**, focusing on 
 ![Intervention Chart](images/3_intervention_mechanic.png)
 
 ### 4. Interest Rate Transmission Mechanism
-*The 0.94 correlation is visually evident as HIBOR (blue) tracks Federal Funds Rate (orange) almost perfectly throughout the entire period. This tight relationship validates the linked exchange rate system's effectiveness in transmitting US monetary policy to Hong Kong.*
+*The 0.94 correlation (on levels) is visually evident as HIBOR (blue) tracks Federal Funds Rate (orange) almost perfectly throughout the entire period. This tight relationship validates the linked exchange rate system's effectiveness in transmitting US monetary policy to Hong Kong.*
 ![HIBOR vs Fed Funds](images/4_rate_correlation.png)
 
 ---
